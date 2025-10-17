@@ -1,0 +1,60 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #27263D;
+        }
+
+        .hotbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #6E6C78;
+            z-index: 1000;
+            height: 70px
+        }
+
+        .hotbar-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .button {
+            flex: 1;
+            min-width: 120px;
+            max-width: 200px;
+            background: #7AA899;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transform: skew(-20deg);
+            font-weight: bold;
+            font-size: 16px;
+            height: 100%;
+            margin: 0 -10px;
+        }
+
+        .button:hover {
+            background: #8B7AA8;
+        }
+
+        .button-text {
+            display: inline-block;
+            transform: skew(20deg);
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 80px auto 0;
+            padding: 20px;
+        }
