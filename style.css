@@ -1,0 +1,202 @@
+/* Общие стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #27263D;
+        }
+
+        .hotbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #6E6C78;
+            z-index: 1000;
+            height: 70px
+        }
+
+        .hotbar-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .button {
+            flex: 1;
+            min-width: 120px;
+            max-width: 200px;
+            background: #7AA899;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transform: skew(-20deg);
+            font-weight: bold;
+            font-size: 16px;
+            height: 100%;
+            margin: 0 -10px;
+        }
+
+        .button:hover {
+            background: #8B7AA8;
+        }
+
+        .button-text {
+            display: inline-block;
+            transform: skew(20deg);
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 80px auto 0;
+            padding: 20px;
+        }
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Футер */
+.site-footer {
+    background-color: #151521;
+    height: 40vh; /* треть экрана по высоте */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding-left: 10px;  /* исправлено отступ слева */
+    padding-right: 10px; /* исправлено отступ справа */
+}
+
+.section {
+    margin: 10px;
+}
+
+/* Заголовки секций */
+.section-title {
+    color: #504e82;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Адрес и иконки приложений */
+.address-icons {
+    position: static; /* вместо absolute */
+    width: 25%;
+    height: auto; /* убираем фиксированную высоту */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.address {
+    font-size: 20px;
+    color: #E3E3E3;
+    word-wrap: break-word;
+    width: 300px;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+.app-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.app-icon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 5px;
+    /* курсор без изменения */
+    cursor: default;
+}
+
+/* Услуги */
+.services {
+    margin-top: 16px auto 10px;
+    padding-left: 10px;
+    width: 70%;
+}
+
+.service-item {
+    margin: 4px 0;
+}
+
+.service-item a {
+    color: #E3E3E3;
+    text-decoration: none;
+    font-size: clamp(12px, 2vw, 16px);
+    cursor: default; /* оставьте так, если не хотите менять курсор */
+}
+
+.service-item a:hover {
+    color: #F2EAAD;
+}
+
+/* Команда */
+.team {
+    position: static; /* вместо absolute */
+    width: 100%;
+    padding: 10px 20px;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.team-names {
+    color: #E3E3E3;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.email {
+    color: #E3E3E3;
+    font-size: 16px;
+}
+
+/* Защита прав - центр, обычный текст */
+.rights-text {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #E3E3E3;
+    font-size: 14px;
+}
+
+.email-link {
+    text-decoration: none;
+    color: #E3E3E3;
+    cursor: default;
+}
+
+.email-link:hover {
+    color: #F2EAAD;
+}
+
+.email-link .email {
+    color: inherit;
+}
